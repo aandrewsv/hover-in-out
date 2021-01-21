@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover in/out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').hover(function(){
+                $(this).attr('src', $(this).attr('newsrc'));
+            }, function(){
+                $(this).attr('src', $(this).attr('oldsrc'))
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="img/heisencat.png" newsrc="img/dojocat.jpg" oldsrc="img/heisencat.png" width="250px">
+        <img src="img/ironcat.png" newsrc="img/dojocat.jpg" oldsrc="img/ironcat.png" width="250px">
+        <img src="img/linkcat.png" newsrc="img/dojocat.jpg" oldsrc="img/linkcat.png" width="250px">
+        <img src="img/stormtroopocat.png" newsrc="img/dojocat.jpg" oldsrc="img/stormtroopocat.png" width="250px">
+    </div>
+</body>
+</html>
